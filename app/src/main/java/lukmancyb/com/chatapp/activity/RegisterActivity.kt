@@ -9,11 +9,9 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
-import kotlinx.android.synthetic.main.activity_main.*
 import lukmancyb.com.chatapp.R
-
-
-
+import lukmancyb.com.chatapp.R.id.btn_register
+import lukmancyb.com.chatapp.R.id.btn_select_image
 
 
 class RegisterActivity : AppCompatActivity() {
