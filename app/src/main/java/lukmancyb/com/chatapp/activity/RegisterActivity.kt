@@ -24,6 +24,7 @@ class RegisterActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         btn_register.setOnClickListener {
            registrasi()
 
@@ -36,18 +37,14 @@ class RegisterActivity : AppCompatActivity() {
         btn_select_image.setOnClickListener {
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"
-            startActivityForResult(intent, REQUEST_CODE)
+            startActivityForResult(intent, 0)
         }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
 
-        println("${requestCode}, ${resultCode}, ${data}")
-
-        Log.d("Registarsi ctivity",data.toString())
-        
-        if (requestCode == REQUEST_CODE && requestCode == Activity.RESULT_OK && data != null){
+        if (requestCode == 0 && resultCode == Activity.RESULT_OK && data != null){
             Log.d("Regiister Activity", "Photo was selected")
             val uri = data.data
             val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, uri)
@@ -72,7 +69,6 @@ class RegisterActivity : AppCompatActivity() {
                 }
                 .addOnFailureListener {
                     Toast.makeText(this, "Failed to create user : ${it.message}", Toast.LENGTH_LONG).show()
-
                     Log.d("Main","Failed to create user : ${it.message}")
                 }
     }
