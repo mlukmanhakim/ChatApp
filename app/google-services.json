@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "763787234268",
+    "firebase_url": "https://fir-chat-97d72.firebaseio.com",
+    "project_id": "fir-chat-97d72",
+    "storage_bucket": "fir-chat-97d72.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:763787234268:android:a78f5de15a3f4c54",
+        "android_client_info": {
+          "package_name": "lukmancyb.com.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "763787234268-t26a7oqqpbh8vlumkqka9f5dcl7rf9e1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "lukmancyb.com.chatapp",
+            "certificate_hash": "0936628acb5185fa8c17f9a30ee9f9f6bd92c507"
+          }
+        },
+        {
+          "client_id": "763787234268-h1c97tqk7o9tl0ttj74rs335vu7aaobr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8Q_z2Csc1JlZOBHM9h_IFIu-ydpeJLG4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "763787234268-h1c97tqk7o9tl0ttj74rs335vu7aaobr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

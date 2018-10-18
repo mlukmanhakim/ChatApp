@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lukmancyb.com.chatapp.activity.RegisterActivity">
+
+
+    <Button
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="@color/text"
+        android:text="Select Image"
+        android:id="@+id/btn_select_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_select_picture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+
+
+        android:id="@+id/username_edit_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_edit_text_login_register"
+        android:ems="10"
+        android:hint="Username . . ."
+        android:inputType="textPersonName"
+        android:paddingStart="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_select_image" />
+
+    <EditText
+        android:id="@+id/email_edit_register"
+        android:paddingStart="16dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text_login_register"
+        android:ems="10"
+        android:hint="Email . . ."
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/username_edit_register"
+        app:layout_constraintStart_toStartOf="@+id/username_edit_register"
+        app:layout_constraintTop_toBottomOf="@+id/username_edit_register" />
+
+    <EditText
+        android:id="@+id/passwor_edit_register"
+        android:paddingStart="16dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text_login_register"
+        android:ems="10"
+        android:hint="Password . . ."
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/email_edit_register"
+        app:layout_constraintStart_toStartOf="@+id/email_edit_register"
+        app:layout_constraintTop_toBottomOf="@+id/email_edit_register" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:text="Register"
+        android:textColor="@color/text"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/passwor_edit_register"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwor_edit_register"
+        app:layout_constraintTop_toBottomOf="@+id/passwor_edit_register" />
+
+    <TextView
+        android:id="@+id/textAlready"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Already have an account ?"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />
+</android.support.constraint.ConstraintLayout>
